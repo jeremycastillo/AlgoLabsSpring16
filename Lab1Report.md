@@ -1,6 +1,6 @@
 # Lab 1 Report - Stable Matchings
-	##Josue Alfaro 
-	##EID: jja2244
+####Josue Alfaro 
+####EID: jja2244
 ##Part1: Write a report
 
 ###(a) Prove that there always exists a perfect matching that is weakly stable.

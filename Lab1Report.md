@@ -48,8 +48,8 @@ The runtime complexity of the brute force algorithm is O(N!), where N is the num
 
 ###(f)  Plot the number of couples (x-axis) against the time in ms it takes for the code to run (y-axis). Have 8 points for GS algorithm and 4-8 points for the brute force method. Take note of the trend in run time as the number of apartments increases.
 
-![Brute Force Graph](Lab1Charts/BrutoForce.png)
-![GS Graph](Lab1Charts/GSSolution.png)
+![Efficiency of Algorithms](Lab1Charts/CombinedGraph.png)
+
 
 ##Part2: Implement Brute Force Solution
 

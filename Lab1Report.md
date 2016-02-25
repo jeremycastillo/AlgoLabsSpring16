@@ -1,5 +1,6 @@
 # Lab 1 Report - Stable Matchings
-
+	##Josue Alfaro 
+	##EID: jja2244
 ##Part1: Write a report
 
 ###(a) Prove that there always exists a perfect matching that is weakly stable.
@@ -49,3 +50,25 @@ The runtime complexity of the brute force algorithm is O(N!), where N is the num
 
 ![Brute Force Graph](Lab1Charts/BrutoForce.png)
 ![GS Graph](Lab1Charts/GSSolution.png)
+
+##Part2: Implement Brute Force Solution
+
+Compute all permutations of tenants and apartments. Then use following algorithm to determine if any of the permutations is a weakly stable matching.
+
+	for each tenant in given_matching
+		if current apartment not highest preference
+			for each apartment in tenant preference list
+				if apartmenti has higher preference than current apartment
+					find competing tenant
+					find landlord for apartment of interest
+					if landlord prefers this tenant than competing (current tenant)
+						return false
+					endif
+				endif
+			endfor
+		endif
+	endfor
+	return true
+##Part3: Implement an Efficient Algorithm
+
+Please refer to Part1: (b).

@@ -46,5 +46,6 @@ Each iteration consists of a tenant trying to get an apartment, an apartment tha
 The runtime complexity of the brute force algorithm is O(N!), where N is the number of tenants (number of tenants and apartments should be the same). With the brute force algorithm we compute every possible outcome and then see if a certain matching is weakly stable. There are N! possible matchings that can be made so it takes us O(N!) to actually make all the pairings. The reason that there are N! possible matchings is because when we pair a tenant and an apartment we care about every last detail. When forming all possible ways to match tenants and apartments we start talking about permutations. With permutations we care about every single detail since order matters.
 
 ###(f)  Plot the number of couples (x-axis) against the time in ms it takes for the code to run (y-axis). Have 8 points for GS algorithm and 4-8 points for the brute force method. Take note of the trend in run time as the number of apartments increases.
-	![Brute Force Graph](Lab1Charts/BrutoForce.png)
-	![GS Graph](Lab1Charts/GSSolution.png)
+
+![Brute Force Graph](Lab1Charts/BrutoForce.png)
+![GS Graph](Lab1Charts/GSSolution.png)

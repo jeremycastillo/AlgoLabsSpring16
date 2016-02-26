@@ -30,6 +30,7 @@ Please refer to (c) - last paragraph.
 	endwhile
 
 ###(c) Give proof of algorithm's correctnes. Prove both that algorithm terminates and that it gives a correct result.
+
 Please refer to letter (d) for proof of algorithm termination.
 
 Suppose there is a point where there is a free tenant T and they have already asked to be matched to every apartment. Since each apartment remains with a tenant since they have been asked to pair up, then at this time every apartment has a tenant. Since the set of matched up pairs forms a matching, then N tenants must also be paired up. But there are only N tenants total, and T is not paired to an apartment. A contradiction. So if a tenant is free at some point, then there is an apartment who the tenant has not asked for. 
@@ -44,7 +45,7 @@ Each iteration consists of a tenant trying to get an apartment, an apartment tha
 
 ###(e) Give the runtime complexity of this brute force algorithm in Big-O notation and why.
 
-The runtime complexity of the brute force algorithm is O(N!), where N is the number of tenants (number of tenants and apartments should be the same). With the brute force algorithm we compute every possible outcome and then see if a certain matching is weakly stable. There are N! possible matchings that can be made so it takes us O(N!) to actually make all the pairings. The reason that there are N! possible matchings is because when we pair a tenant and an apartment we care about every last detail. When forming all possible ways to match tenants and apartments we start talking about permutations. With permutations we care about every single detail since order matters.
+The runtime complexity of the brute force algorithm is O(N!*N^2), where N is the number of tenants (number of tenants and apartments should be the same). With the brute force algorithm we compute every possible outcome and then see if a certain matching is weakly stable. There are N! possible matchings that can be made so it takes us O(N!) to actually make all the pairings. The reason that there are N! possible matchings is because when we pair a tenant and an apartment we care about every last detail. When forming all possible ways to match tenants and apartments we start talking about permutations. With permutations we care about every single detail since order matters. So that explains the N! part, now onto the N^2 explanation. When coming up with all of the permutations for the stable matching proble, we also check to see if there exhist at least one matching that is weakly stable. The algorithm implemented for isStableMatching takes O(N^2) because you check every possible case where the tenant may prefer another apartment, so there are N tenants and N apartments. So while you compute the permutation you just check if it is stable, so you call isStableMatching N! times. Hence the brute force is O(N!*N^2).  
 
 ###(f)  Plot the number of couples (x-axis) against the time in ms it takes for the code to run (y-axis). Have 8 points for GS algorithm and 4-8 points for the brute force method. Take note of the trend in run time as the number of apartments increases.
 

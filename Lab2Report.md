@@ -40,30 +40,30 @@ My implementation of Dijkstra's algorithm takes O(|n||e|). The way I came about 
 a)
 
 GPSR
-Transmission Range: 5.0 meters, success: 4950/4950, avgTime: 3,832ns.
-Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 432ns.
-Transmission Range: 15.0 meters, success: 4950/4950, avgTime: 116ns.
-Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 113ns.
-Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 121ns.
+	Transmission Range: 5.0 meters, success: 4950/4950, avgTime: 3,832ns.
+	Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 432ns.
+	Transmission Range: 15.0 meters, success: 4950/4950, avgTime: 116ns.
+	Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 113ns.
+	Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 121ns.
 
 b)
 
 Dijkstra's algorithm (Min Latency)
-Transmission Range: 5.0 meters, success: 4950/4950, avgTime: 84,897ns.
-Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 79,922ns.
-Transmission Range: 15.0 meters, success: 4950/4950, avgTime: 85,595ns.
-Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 81,739ns.
-Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 83,930ns.
+	Transmission Range: 5.0 meters, success: 4950/4950, avgTime: 84,897ns.
+	Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 79,922ns.
+	Transmission Range: 15.0 meters, success: 4950/4950, avgTime: 85,595ns.
+	Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 81,739ns.
+	Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 83,930ns.
 
 
 c)
 
 Dijkstra's algorithm (Min Hops)
-Transmission Range: 5.0 meters, success: 4950/4950, avgTime: 67,634ns.
-Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 46,064ns.
-Transmission Range: 15.0 meters, success: 4950/4950, avgTime: 39,412ns.
-Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 39,090ns.
-Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 39,214ns.
+	Transmission Range: 5.0 meters, success: 4950/4950, avgTime: 67,634ns.
+	Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 46,064ns.
+	Transmission Range: 15.0 meters, success: 4950/4950, avgTime: 39,412ns.
+	Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 39,090ns.
+	Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 39,214ns.
 
 
 

@@ -15,6 +15,7 @@ I choose to represent the graph as an adjacency list. Thus, this graph represent
 b) Give a Big-O analysis of the runtime complexity of the algorithm you used to generate those graph representations. Justify the design decisions you made in optimising for space versus runtime.
 
 Here is a snippet of the algorithm to compute the graph.
+
 	graph := new ArrayList<ArrayList<WeightedVertex>()
 	for each vertex in location 
 		graph.add(new ArrayList<WeightedVertex>())
@@ -24,6 +25,7 @@ Here is a snippet of the algorithm to compute the graph.
 			add WeightedVertex for both edges in their respective graph locations
 		endif
 	endfor
+
 So this algortihm, takes O(|n|+|e|) runtime to compute the graph. There was no decision in order to optimize for space versus runtime, since both Big-O space for the graph and Big-O runtime to compute the graph are the same. 
 
 c) Bearing in mind the graph representations you have devised for this project and the trade-offs between space requirements and runtime, give a Big-O analysis of the runtime for your implementation of Dijkstra's algortihm. If the runtime is worse than expected, explain why.
@@ -32,6 +34,7 @@ My implementation of Dijkstra's algorithm takes O(|n||e|). The way I came about 
 
 ##Runtime Efficiency and Success Rate
 a)
+
 GPSR
 Transmission Range: 5.0 meters, succcess: 4950/4950, avgTime: 3,832ns.
 Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 432ns.
@@ -40,6 +43,7 @@ Transmission Range: 20.0 meters, success: 4950/4950, avgTime: 113ns.
 Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 121ns.
 
 b)
+
 Dijkstra's algorithm (Min Latency)
 Transmission Range: 5.0 meters, succcess: 4950/4950, avgTime: 84,897ns.
 Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 79,922ns.
@@ -49,6 +53,7 @@ Transmission Range: 25.0 meters, success: 4950/4950, avgTime: 83,930ns.
 
 
 c)
+
 Dijkstra's algorithm (Min Hops)
 Transmission Range: 5.0 meters, succcess: 4950/4950, avgTime: 67,634ns.
 Transmission Range: 10.0 meters, success: 4950/4950, avgTime: 46,064ns.

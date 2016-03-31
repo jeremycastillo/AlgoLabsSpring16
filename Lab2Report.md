@@ -73,6 +73,6 @@ d) Plot the success rate and the average running time versus the vertex radius f
 ![Efficiency of Algorithms](Lab2Charts/DMinHop.png)
 ![Efficiency of Algorithms](Lab2Charts/DMinLatency.png)
 
-For all three of these charts, when plotted, the success rate is just a horizontal line at 1.0. As you can see above in parts a), b), and c) the success rate was 1, for every single attempt. 
+For all three of these charts, when plotted, the success rate is just a horizontal line at 1.0. As you can see above in parts a), b), and c) the success rate was 1, for every single attempt. While on the graph the success rate might look like it is zero, it is not.  
 
 As the radius increases, all of the algorithms tend to perform better in terms of running time. The GPSR algorithm seems much improvement (more than half) when the radius increases, but it also levels off at higher radii. The Dijkstra (Min Latency) algorithm does not see a huge improvement on running time, but it still does perform better as radii increase. The Dijkstra (Min Hops) algorithm sees improvement (about half) when the radius increases, and it also levels off. 

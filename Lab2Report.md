@@ -5,11 +5,11 @@
 ##Proofs
 a) Give a brief proof which shows that GPSR, while greedy, is not an optimal solution for the wireless routing problem. 
 
-GPSR is a greedy algorithm that decides to add a node, closer to the sink node, to its path. However this is not an optimal solution for the wireless routing problem because it does not consider the weight between to vertices. It purly determines a path based on distance. So while it might find a path down a short distance, the packet might not travel as fast as it would going down a longer path but with much lower latency. 
+GPSR is a greedy algorithm that decides to add a node, closer to the sink node, to its path. However this is not an optimal solution for the wireless routing problem because it does not consider the weight between to vertices. It purly determines a path based on distance. So while it might find a path down a short distance, the packet might not travel as fast as it would going down a longer path but with much lower latency. Also, from the sourceIndex node, the node that connects to the sourceIndex node and is closests to the sinkIndex might not lead down a path at all. So it can potentially get to a dead end, while there might be a longer path available that actually connects the soureIndex and sinkIndex.
 
 b) Argue that dijkstraPathHops() in general does a better job than GPSR at finding a path with minimum number of hops, but is still not an optimal solution to the routing problem.
 
-dijkstraPathHops() in general does a better job than GPSR at finding a path with minimum number of hops because it does take into consideration the weight between to vertices. So will it is finding the shortest distance, it also takes into account the amount of latency that could occur if the packet where sent down said path. However, this is not a minimal solution because we are considering that the edge weight is one. 
+dijkstraPathHops() in general does a better job than GPSR at finding a path with minimum number of hops because it does take into consideration the weight between to vertices. So while it is finding the shortest distance, it also takes into account the amount of latency that could occur if the packet where sent down said path. However, this is not a minimal solution because we are considering that the edge weight is one. Also, Disjkstra looks at all of the connected nodes before making a decision and then going down that path. So it won't run into the problems that GPSR can potentially run into.
 
 ##Efficiency Analysis
 a) Give a Big-O analysis of the memory space efficiency of your graph representation in terms of nodes (n) and edges (e). Discuss any optimizations you made. 
